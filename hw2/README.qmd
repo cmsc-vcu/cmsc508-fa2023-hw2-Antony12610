@@ -1,7 +1,7 @@
 ---
 title: Welcome to Homework 2
 date: last-modified
-author: (your name goes here!)
+author: Antony Fuentes
 format:
     gfm:
         mermaid-format: png
