@@ -17,12 +17,30 @@ Imagine you're designing a Library Management System for a small local library. 
 ## Design Task 1
 
 Identify and document the entities, attributes, and relationships using Chen notation.
+```{dot}
+graph ER {
+    layout=neato;
+    scale=1.1;
+    node [shape=box]; Book; Member;
+    node [shape=ellipse]; ISBN, Title, Publication_Year, Member_ID, Name, Contact_Info;
+    node [shape=diamond,style=filled,color=lightgrey]; has
+    
+    Book -- has [label="1",len=1.00]
+    has -- Member [label="n",len=1.00]
+    
+    Book -- ISBN
+    Book -- Title
+    Book -- Publication_Year
+    Member -- Member_ID
+    Member -- Name
+    Member -- Contact_Info
 
-*(remove this block and add your your solution here!)*
+}
+```
 
 ## Design Task 2
 
 Identify and document the entities, attributes, and relationships using Crow’s Foot notation.
+```{mermaid}
 
-*(remove this block and add your your solution here!)*
-
+    ```

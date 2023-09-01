@@ -1,6 +1,6 @@
 # Welcome to Homework 2
-(your name goes here!)
-2023-08-30
+Antony Fuentes
+2023-08-31
 
 This is my solution to homework 2. I’m using Quarto render this document
 from a QMD file to a regular MD file for display on GITHUB.
@@ -20,11 +20,23 @@ they don’t have to.
 Identify and document the entities, attributes, and relationships using
 Chen notation.
 
-*(remove this block and add your your solution here!)*
+graph ER { layout=neato; scale=1.1; node \[shape=box\]; building; room;
+node \[shape=ellipse\]; address, city, state, occupant, room_number node
+\[shape=diamond,style=filled,color=lightgrey\]; has
+
+    building -- has [label="1",len=1.00]
+    has -- room [label="n",len=1.00]
+
+    building -- address
+    building -- city
+    building -- state
+
+room – room_number room – occupant }
 
 ## Design Task 2
 
 Identify and document the entities, attributes, and relationships using
 Crow’s Foot notation.
 
-*(remove this block and add your your solution here!)*
+erDiagram ORDER .o–\|\| CUSTOMER : places ORDER .o–\|\| SALES_PERSON :
+places ORDER .o–\|\| PRODUCT : places
