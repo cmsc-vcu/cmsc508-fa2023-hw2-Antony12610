@@ -42,5 +42,18 @@ graph ER {
 
 Identify and document the entities, attributes, and relationships using Crow’s Foot notation.
 ```{mermaid}
-
+%%| echo: true
+%%| eval: false
+erDiagram
+    Member ||--|{ Book : Checkout_Date
+    Member {
+        string Contact_Info
+        string Member_ID
+        string Name
+    }
+    Book{
+        string Publication_Year
+        string Title
+        string ISBN
+    }
     ```
